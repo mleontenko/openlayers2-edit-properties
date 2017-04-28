@@ -52,6 +52,21 @@
             map.addControl(selectController);
             selectController.activate();
 
+            //button for changing property value
+          	var PushButton = document.getElementById('store-data');
+          	PushButton.addEventListener('click', function(){
+          	  if(selectController){
+          		  //change "processed" property value from 0 to 1
+
+                //store geojson to variable for export
+
+                //print geojson to "demo" div(for debugging)
+
+          	  }else {
+                   window.alert("You have not selected anything");
+                  }
+          	 });
+
         }
     </script>
   </head>
@@ -73,6 +88,6 @@
     //button and debug div
     <button id="store-data">Processed</button>
 	  <div id="demo"></div>
-    
+
   </body>
 </html>
